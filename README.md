@@ -73,7 +73,7 @@ uvx ableton-mcp
 
 1. Download the `AbletonMCP_Remote_Script/__init__.py` file from this repo
 
-2. Copy the folder to Ableton's MIDI Remote Scripts directory:
+2. Copy the folder to Ableton's MIDI Remote Scripts directory. Different OS and versions have different locations. One of these should work, you might have to look:
 
    **For macOS:**
    - Method 1: Go to Applications > Right-click on Ableton Live app → Show Package Contents → Navigate to:
@@ -90,7 +90,7 @@ uvx ableton-mcp
      `C:\Program Files\Ableton\Live XX\Resources\MIDI Remote Scripts\`
    *Note: Replace XX with your Ableton version number (e.g., 10, 11, 12)*
 
-3. Create a folder called 'AbletonMCP' in the Remote Scripts directory and paste the downloaded '\_\_init\_\_.py' file
+4. Create a folder called 'AbletonMCP' in the Remote Scripts directory and paste the downloaded '\_\_init\_\_.py' file
 
 3. Launch Ableton Live
 
