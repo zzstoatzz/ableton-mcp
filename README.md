@@ -33,14 +33,7 @@ If you're on Mac, please install uv as:
 brew install uv
 ```
 
-On Windows:
-```
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex" 
-```
-and then:
-```
-set Path=C:\Users\[username]\.local\bin;%Path%
-```
+Otherwise, install from [uv's official website][https://docs.astral.sh/uv/getting-started/installation/]
 
 ⚠️ Do not proceed before installing UV
 
@@ -74,13 +67,35 @@ uvx ableton-mcp
 ### Installing the Ableton Remote Script
 
 1. Download the `AbletonMCP` folder from this repo
+
 2. Copy the folder to Ableton's MIDI Remote Scripts directory:
-   - **macOS**: `/Applications/Ableton Live XX.app/Contents/App-Resources/MIDI Remote Scripts/`
-   - **Windows**: `C:\ProgramData\Ableton\Live XX\Resources\MIDI Remote Scripts\`
-   - (Replace XX with your Ableton version number)
+
+   **For macOS:**
+   - Method 1: Right-click on Ableton Live app → Show Package Contents → Navigate to:
+     `Contents/App-Resources/MIDI Remote Scripts/`
+   - Method 2: Use the direct path (replace XX with your version number):
+     `/Applications/Ableton Live XX.app/Contents/App-Resources/MIDI Remote Scripts/`
+   - For Suite version:
+     `/Applications/Ableton Live XX Suite.app/Contents/App-Resources/MIDI Remote Scripts/`
+   - For older versions:
+     `/Applications/Ableton Live XX.app/Contents/Resources/MIDI Remote Scripts/`
+   
+   **For Windows:**
+   - Primary location:
+     `C:\ProgramData\Ableton\Live XX\Resources\MIDI Remote Scripts\`
+   - Alternative location:
+     `C:\Program Files\Ableton\Live XX\Resources\MIDI Remote Scripts\`
+   - For portable installations:
+     Look in your Ableton installation folder for `Resources\MIDI Remote Scripts\`
+
+   *Note: Replace XX with your Ableton version number (e.g., 10, 11, 12)*
+
 3. Launch Ableton Live
-4. Go to Preferences > Link/MIDI
+
+4. Go to Preferences → Link/MIDI
+
 5. In the Control Surface dropdown, select "AbletonMCP"
+
 6. Set Input and Output to "None"
 
 ## Usage
