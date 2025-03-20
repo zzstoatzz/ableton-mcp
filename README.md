@@ -126,7 +126,7 @@ Once the config file has been set on Claude, and the remote script is running in
 
 Here are some examples of what you can ask Claude to do:
 
-- "Create an 80s synthwave track" [Demo](https://youtu.be/NPVLPs_ybpU)
+- "Create an 80s synthwave track" [Demo](https://youtu.be/VH9g66e42XA)
 - "Create a Metro Boomin style hip-hop beat"
 - "Create a new MIDI track with a synth bass instrument"
 - "Add reverb to my drums"
