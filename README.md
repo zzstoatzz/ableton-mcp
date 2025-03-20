@@ -2,9 +2,6 @@
 
 AbletonMCP connects Ableton Live to Claude AI through the Model Context Protocol (MCP), allowing Claude to directly interact with and control Ableton Live. This integration enables prompt-assisted music production, track creation, and Live session manipulation.
 
-## Join the Community
-Give feedback, get inspired, and build on top of the MCP: [Discord](https://discord.gg/claudeai)
-
 ## Features
 
 - **Two-way communication**: Connect Claude AI to Ableton Live through a socket-based server
@@ -17,7 +14,7 @@ Give feedback, get inspired, and build on top of the MCP: [Discord](https://disc
 
 The system consists of two main components:
 
-1. **Ableton Remote Script** (`AbletonMCP/__init__.py`): A MIDI Remote Script for Ableton Live that creates a socket server to receive and execute commands
+1. **Ableton Remote Script** (`Ableton_Remote_Script/__init__.py`): A MIDI Remote Script for Ableton Live that creates a socket server to receive and execute commands
 2. **MCP Server** (`server.py`): A Python server that implements the Model Context Protocol and connects to the Ableton Remote Script
 
 ## Installation
@@ -66,33 +63,28 @@ uvx ableton-mcp
 
 ### Installing the Ableton Remote Script
 
-1. Download the `AbletonMCP` folder from this repo
+1. Download the `AbletonRemoteScript/__init__.py` file from this repo
 
-2. Copy the folder to Ableton's MIDI Remote Scripts directory:
+2. Copy the file to Ableton's MIDI Remote Scripts directory:
 
    **For macOS:**
-   - Method 1: Right-click on Ableton Live app → Show Package Contents → Navigate to:
+   - Method 1: Go to Applications > Right-click on Ableton Live app → Show Package Contents → Navigate to:
      `Contents/App-Resources/MIDI Remote Scripts/`
-   - Method 2: Use the direct path (replace XX with your version number):
-     `/Applications/Ableton Live XX.app/Contents/App-Resources/MIDI Remote Scripts/`
-   - For Suite version:
-     `/Applications/Ableton Live XX Suite.app/Contents/App-Resources/MIDI Remote Scripts/`
-   - For older versions:
-     `/Applications/Ableton Live XX.app/Contents/Resources/MIDI Remote Scripts/`
+   - Method 2: If it's not there in the first method, use the direct path (replace XX with your version number):
+     `/Users/[Username]/Library/Preferences/Ableton/Live XX/User Remote Scripts`
    
    **For Windows:**
-   - Primary location:
+   - Method 1:
+     C:\Users\[Username]\AppData\Roaming\Ableton\Live x.x.x\Preferences\User Remote Scripts 
+   - Method 2:
      `C:\ProgramData\Ableton\Live XX\Resources\MIDI Remote Scripts\`
-   - Alternative location:
+   - Method 3:
      `C:\Program Files\Ableton\Live XX\Resources\MIDI Remote Scripts\`
-   - For portable installations:
-     Look in your Ableton installation folder for `Resources\MIDI Remote Scripts\`
-
    *Note: Replace XX with your Ableton version number (e.g., 10, 11, 12)*
 
 3. Launch Ableton Live
 
-4. Go to Preferences → Link/MIDI
+4. Go to Settings/Preferences → Link, Tempo & MIDI
 
 5. In the Control Surface dropdown, select "AbletonMCP"
 
