@@ -41,7 +41,7 @@ Otherwise, install from [uv's official website][https://docs.astral.sh/uv/gettin
 ```json
 {
     "mcpServers": {
-        "ableton": {
+        "AbletonMCP": {
             "command": "uvx",
             "args": [
                 "ableton-mcp"
