@@ -36,6 +36,8 @@ Otherwise, install from [uv's official website][https://docs.astral.sh/uv/gettin
 
 ### Claude for Desktop Integration
 
+[Follow along with the setup instructions video](https://youtu.be/iJWJqyVuPS8)
+
 1. Go to Claude > Settings > Developer > Edit Config > claude_desktop_config.json to include the following:
 
 ```json
@@ -63,7 +65,9 @@ uvx ableton-mcp
 
 ### Installing the Ableton Remote Script
 
-1. Download the `AbletonMCP_Remote_Script` folder from this repo
+[Follow along with the setup instructions video](https://youtu.be/iJWJqyVuPS8)
+
+1. Download the `AbletonMCP_Remote_Script/__init__.py` file from this repo
 
 2. Copy the folder to Ableton's MIDI Remote Scripts directory:
 
@@ -81,6 +85,8 @@ uvx ableton-mcp
    - Method 3:
      `C:\Program Files\Ableton\Live XX\Resources\MIDI Remote Scripts\`
    *Note: Replace XX with your Ableton version number (e.g., 10, 11, 12)*
+
+3. Create a folder called 'AbletonMCP' in the Remote Scripts directory and paste the downloaded '\_\_init\_\_.py' file
 
 3. Launch Ableton Live
 
@@ -116,7 +122,7 @@ Once the config file has been set on Claude, and the remote script is running in
 
 Here are some examples of what you can ask Claude to do:
 
-- "Create an 80s synthwave track"
+- "Create an 80s synthwave track" [Demo](https://youtu.be/NPVLPs_ybpU)
 - "Create a Metro Boomin style hip-hop beat"
 - "Create a new MIDI track with a synth bass instrument"
 - "Add reverb to my drums"
