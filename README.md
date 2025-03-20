@@ -63,9 +63,9 @@ uvx ableton-mcp
 
 ### Installing the Ableton Remote Script
 
-1. Download the `AbletonRemoteScript/__init__.py` file from this repo
+1. Download the `AbletonMCP_Remote_Script` folder from this repo
 
-2. Copy the file to Ableton's MIDI Remote Scripts directory:
+2. Copy the folder to Ableton's MIDI Remote Scripts directory:
 
    **For macOS:**
    - Method 1: Go to Applications > Right-click on Ableton Live app → Show Package Contents → Navigate to:
