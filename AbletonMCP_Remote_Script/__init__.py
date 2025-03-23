@@ -172,7 +172,7 @@ class AbletonMCP(ControlSurface):
                         except AttributeError:
                             # Python 2: string is already bytes
                             client.sendall(json.dumps(response))
-                    except json.JSONDecodeError:
+                    except ValueError:
                         # Incomplete data, wait for more
                         continue
                         
@@ -192,7 +192,7 @@ class AbletonMCP(ControlSurface):
                         break
                     
                     # For serious errors, break the loop
-                    if not isinstance(e, json.JSONDecodeError):
+                    if not isinstance(e, ValueError):
                         break
         except Exception as e:
             self.log_message("Error in client handler: " + str(e))
