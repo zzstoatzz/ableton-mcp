@@ -5,7 +5,7 @@ AbletonMCP connects Ableton Live to Claude AI through the Model Context Protocol
 
 ### Join the Community
 
-Give feedback, get inspired, and build on top of the MCP: [Discord](https://discord.gg/SheqY3UW). Made by [Siddharth](https://x.com/sidahuj)
+Give feedback, get inspired, and build on top of the MCP: [Discord](https://discord.gg/3ZrMyGKnaU). Made by [Siddharth](https://x.com/sidahuj)
 
 ## Features
 
