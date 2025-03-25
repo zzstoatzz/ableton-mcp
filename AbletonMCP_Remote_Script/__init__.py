@@ -186,6 +186,10 @@ class AbletonMCP(ControlSurface):
                         "message": str(e)
                     }
                     try:
+                        # Python 3: encode string to bytes
+                        client.sendall(json.dumps(error_response).encode('utf-8'))
+                    except AttributeError:
+                        # Python 2: string is already bytes
                         client.sendall(json.dumps(error_response))
                     except:
                         # If we can't send the error, the connection is probably dead
